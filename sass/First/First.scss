@@ -1,0 +1,1128 @@
+@mixin flexProperty($property, $value, $alignValue) {
+  display: flex;
+  flex-direction: $property;
+  justify-content: $value;
+  align-items: $alignValue;
+}
+@mixin grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  padding: 3rem;
+  margin: auto;
+}
+
+@mixin h2 {
+  margin-top: 1rem;
+  font-size: 2.4rem;
+  font-weight: normal;
+  line-height: 52px;
+}
+
+@mixin p {
+  font-size: 1.1rem;
+  line-height: 32px;
+  margin-bottom: 1rem;
+}
+
+.first {
+  @include flexProperty(column, centerm, center);
+  margin-top: 10rem;
+  h1 {
+    font-size: 2.5rem;
+    margin: 5px 0;
+  }
+  .firstImg {
+    @include flexProperty(row, center, center);
+    width: 100%;
+    margin-top: 3rem;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .firsPara {
+    font-size: 23px;
+    text-align: center;
+    width: 77%;
+    line-height: 51px;
+    margin: 30px;
+  }
+}
+
+.second {
+  @include grid();
+  width: 80%;
+  .second-col {
+    @include flexProperty(column, flex-start, flex-start);
+    h2 {
+      @include h2();
+    }
+    &:last-child {
+      p {
+        @include p();
+      }
+      .circle {
+        display: flex;
+        align-items: center;
+        div {
+          display: flex;
+          align-items: center;
+          margin-right: 10px;
+          span {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-left: 6px;
+          }
+          .circle-para {
+            width: 20px;
+            height: 20px;
+            border: 2px solid black;
+            background-color: red;
+            border-radius: 50%;
+            margin: 5px;
+            cursor: pointer;
+          }
+          &:nth-child(1) {
+            .circle-para {
+              background-color: navy;
+            }
+          }
+          &:nth-child(2) {
+            .circle-para {
+              background-color: yellow;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.third {
+  display: grid;
+  margin: auto;
+  width: 90%;
+  text-align: center;
+  grid-template-areas:
+    "b a"
+    "b c";
+  .third-col {
+    .galaxy1 {
+      grid-area: "a";
+      width: 50vw;
+    }
+    .galaxy2 {
+      grid-area: "b";
+      width: 25vw;
+    }
+    .galaxy3 {
+      grid-area: "c";
+      width: 25vw;
+    }
+  }
+}
+
+.fourth {
+  @include flexProperty(column, center, center);
+
+  a {
+    border: 1px solid black;
+    align-items: center;
+    margin: 4rem auto;
+    @include flexProperty(row, center, center);
+    text-align: center;
+    padding: 1rem 2rem;
+    color: balck;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    span {
+      font-size: 2rem;
+      display: flex;
+      border-left: 1px solid black;
+      padding-left: 2rem;
+      margin-left: 2rem;
+    }
+    &:hover {
+      background-color: black;
+      color: white;
+      span {
+        border-left: 1px solid white;
+      }
+    }
+  }
+  .fourth-row {
+    @include grid();
+    width: 80%;
+    .fourth-col {
+      @include flexProperty(column, flex-start, flex-start);
+      margin: 4rem 2rem;
+      h2 {
+        @include h2();
+      }
+      p:last-child {
+        @include p();
+      }
+    }
+  }
+  h1 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+  }
+  .infinityImg {
+    margin: 6rem 0;
+  }
+  .gradeCamera {
+    @include flexProperty(row, flex-end, center);
+    position: relative;
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+  .rulerImg {
+    position: relative;
+    img {
+      transition: all 0.5s;
+      width: 100%;
+    }
+    #ruler {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+    div {
+      text-align: center;
+      margin: 2rem;
+      p {
+        margin-bottom: 1rem;
+      }
+      .zoomInfo {
+        margin: 0.5rem !important;
+        .smallText {
+          font-size: 14px;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+  #backgroungTransition {
+    background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0)
+      ),
+      url(../../images/background.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    @include flexProperty(row, center, center);
+
+    h1 {
+      font-size: 5rem;
+      color: white;
+    }
+  }
+  .nightNodeImg {
+    border-radius: 30px;
+    width: 80%;
+  }
+  .nightLight {
+    @include flexProperty(row, space-around, center);
+    padding: 1rem;
+    width: 100%;
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+  .singleTake {
+    width: 100%;
+  }
+  .frontCameraImg {
+    width: 80%;
+  }
+  .fiveimage {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    margin: 5rem 0 0;
+    flex-direction: column;
+    align-items: center;
+    #five1,
+    #five3 {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      background-color: white;
+      position: absolute;
+      overflow: hidden;
+      justify-content: center;
+      align-items: center;
+      transition: all 1s;
+      animation: image1 4s linear infinite;
+      img {
+        width: 60%;
+      }
+    }
+    #five2 {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      transition: all 1s;
+      justify-content: center;
+      align-items: center;
+      animation: image2 4s linear 4s infinite;
+      background-color: black;
+      img {
+        width: 60%;
+      }
+    }
+    #five3 {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      background-color: black;
+      position: absolute;
+      overflow: hidden;
+      justify-content: center;
+      align-items: center;
+      transition: all 1s;
+      animation: image1 4s linear infinite;
+      img {
+        width: 90%;
+      }
+    }
+    #five4 {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      position: sticky;
+      top: 0;
+      left: 0;
+      z-index: -100;
+      transition: all 1s;
+      justify-content: center;
+      align-items: center;
+      animation: image2 4s linear 4s infinite;
+      background-color: black;
+      img {
+        width: 90%;
+      }
+    }
+  }
+  .empty {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+  }
+  .galaxyStart {
+    background: black;
+    width: 100%;
+    padding: 3rem;
+  }
+
+  .galaxyDisplayStart {
+    background-color: black;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem;
+    img {
+      border-radius: 30px;
+      width: 100%;
+    }
+  }
+  .twelve-row {
+    background: black;
+    color: white;
+    width: 100%;
+    padding: 10rem 1rem;
+  }
+  .drop {
+    display: flex;
+    position: relative;
+    background-image: url(../../images/galaxy-s20_fe_ip68-drop1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    .drop1 {
+      img {
+        width: 100%;
+      }
+    }
+    .drop2 {
+      position: absolute;
+      display: flex;
+      width: 45%;
+      bottom: 0;
+      z-index: 46;
+      img {
+        width: 100%;
+      }
+    }
+    .drop3 {
+      display: flex;
+      position: absolute;
+      bottom: 0;
+      z-index: 601;
+      width: 67%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .sixteen-row {
+    position: relative;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.999),
+        rgba(0, 0, 0, 0.1)
+      ),
+      url(../../images/galaxy-s20_fe_echo-system.webp);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    @include grid();
+    color: black;
+    width: 100%;
+    margin: 6rem 0;
+    .sixteen-col {
+      @include flexProperty(column, flex-start, flex-start);
+      color: white;
+      margin: 5rem 0;
+      h2 {
+        @include h2();
+        margin: 1rem 0;
+      }
+      p:last-child {
+        @include p();
+      }
+      a {
+        margin: 2rem 0;
+        color: white;
+        border: 1px solid white;
+        &:hover {
+          background-color: white;
+          color: black;
+        }
+      }
+    }
+    .sixteen-col2 {
+      position: absolute;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      right: 0;
+      z-index: -10;
+      img {
+        width: 80%;
+      }
+    }
+  }
+  .info-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    padding: 2rem;
+    width: 85%;
+    margin: auto;
+    .info-col {
+      line-height: 37px;
+      h2 {
+        font-size: 16px;
+      }
+      a {
+        border: none;
+        text-decoration: underline;
+        justify-content: flex-start;
+        padding: 0;
+        margin: 1rem 0;
+        &:hover {
+          background-color: transparent;
+          color: black;
+          border: none;
+          outline: none;
+        }
+      }
+    }
+  }
+  .image-row {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 2rem;
+    width: 80%;
+    .image-col {
+      overflow: hidden;
+      border-radius: 30px;
+      img {
+        width: 100%;
+        height: 100%;
+        transition: all 0.4s;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+  .galaxyFold {
+    display: flex;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.999),
+        rgba(0, 0, 0, 0.1)
+      ),
+      url(../../images/galaxy-z-fold2-mkt-pc.webp);
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-color: #f4f4f4;
+    justify-content: flex-start;
+    margin: 4rem 0;
+    .leftGalaxyFold {
+      padding-left: 4rem;
+      color: white;
+      padding-top: 10rem;
+      h1 {
+        font-size: 3rem;
+        font-weight: normal;
+      }
+      a {
+        width: 60%;
+        margin: 3rem 0;
+        color: white;
+        border: 1px solid white;
+        &:hover {
+          background-color: white;
+          color: black;
+        }
+      }
+    }
+    .rightGalaxyFold {
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .background {
+    display: flex;
+    background-image: url(../../images/galaxy-s20_fe_banner_why-galaxy.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    border-radius: 30px;
+    height: 100vh;
+    margin: 4rem 0;
+    padding-top: 7rem;
+    flex-direction: column;
+    width: 90%;
+    text-align: center;
+    img {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: -10;
+      border-radius: 56px;
+    }
+    a {
+      border: 1px solid white;
+      color: white;
+      margin: 2rem;
+      &:hover {
+        background-color: white;
+        color: black;
+      }
+    }
+    h2 {
+      margin-bottom: 1rem;
+    }
+    h1 {
+      font-size: 4rem;
+      font-weight: normal;
+      letter-spacing: 5px;
+    }
+    p {
+      font-size: 1.2rem;
+      line-height: 46px;
+    }
+  }
+  .background2 {
+    display: flex;
+    background-image: url(../../images/galaxy-s20_fe_banner_design-story.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    justify-content: center;
+    padding-left: 5rem;
+    background-repeat: no-repeat;
+    align-items: flex-start;
+    border-radius: 30px;
+    color: white;
+    margin: 4rem 0;
+    flex-direction: column;
+    width: 90%;
+    text-align: start;
+    h1 {
+      width: 50%;
+    }
+    a {
+      margin: 1rem 0;
+      color: white;
+      border: 1px solid white;
+      transition: all 0.3s;
+      &:hover {
+        background-color: white;
+        color: black;
+      }
+    }
+  }
+  hr {
+    display: flex;
+    width: 100%;
+    height: 1px;
+    background: #ccc;
+    margin: -30px 0 2rem;
+  }
+}
+
+.about-first {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  .about-para {
+    flex-basis: 60%;
+    .big-para {
+      line-height: 26px;
+      color: #433131bf;
+      font-size: 12px;
+      padding-left: 50px;
+    }
+  }
+  .about-select {
+    flex-basis: 40%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    .c-yellow {
+      display: flex;
+      width: 2rem;
+      height: 2rem;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid yellow;
+      background: black;
+      color: white;
+      margin: 0 5px;
+    }
+    .c {
+      display: flex;
+      width: 2rem;
+      height: 2rem;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid #ccc;
+      background: white;
+      margin: 0 5px;
+    }
+    #dropdown {
+      width: 17rem;
+      border: 1px solid black;
+      height: 32px;
+      position: relative;
+      margin-left: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      .dropdown-content {
+        border-top: 0;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        background-color: white;
+        left: 0;
+        height: 0;
+        overflow: hidden;
+        line-height: 50px;
+        a {
+          text-decoration: none;
+          color: black;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+ol {
+  width: 82%;
+  margin: 1rem auto;
+  line-height: 27px;
+  li {
+    color: #433131bf;
+    font-size: 12px;
+  }
+}
+
+.rowNav {
+  display: flex;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  width: 90%;
+  margin: auto;
+  padding: 1rem 0;
+  li {
+    list-style: none;
+    padding: 0 5px;
+    a {
+      text-decoration: none;
+      color: black;
+      font-size: 14px;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    span {
+      margin-left: 5px;
+      color: #ccc;
+    }
+  }
+  .blur {
+    color: #ccc;
+  }
+}
+
+.gridnavigation {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 1rem;
+  .gridnavcol {
+    border: 1px solid #ccc;
+    padding: 1.5rem;
+    line-height: 32px;
+    h2 {
+      font-size: 20px;
+      margin-bottom: 1rem;
+    }
+    ul {
+      li {
+        list-style: none;
+        a {
+          color: rgba(0, 0, 0, 0.737);
+          text-decoration: none;
+          font-size: 15px;
+          &:hover {
+            text-decoration: underline;
+            color: black;
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer-1 {
+  padding-bottom: 1rem;
+  p {
+    font-size: 12px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.8);
+    padding-left: 3rem;
+    &:nth-child(1) {
+      margin-bottom: 0.7rem;
+    }
+    &:nth-child(3) {
+      margin-bottom: 0.7rem;
+    }
+  }
+}
+
+.footer-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 1rem;
+  border-top: 1px solid #ccc;
+  .left-footer {
+    display: flex;
+    align-items: center;
+    h1 {
+      font-size: 14px;
+    }
+    ul {
+      display: flex;
+      margin-left: 1rem;
+      align-items: center;
+      li {
+        list-style: none;
+        padding: 0 0.5rem;
+        a {
+          text-decoration: none;
+          color: rgba(0, 0, 0, 0.8);
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .right-footer {
+    display: flex;
+    align-items: center;
+    img {
+      width: 20px;
+      margin: 0 0.5rem;
+    }
+  }
+}
+.show-dropdown-content {
+  height: fit-content !important;
+  border: 1px solid black;
+}
+
+#heading {
+  transition: all 0.4s;
+  color: white;
+  font-size: 5rem;
+}
+
+.lightImage {
+  transition: all 0.4s;
+}
+
+@keyframes image1 {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes image2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  .background {
+    h1 {
+      font-size: 3rem !important;
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .about {
+    .gridnavigation {
+      grid-template-columns: repeat(3, 1fr) !important;
+      grid-row-gap: 1rem;
+      .gridnavcol {
+        &:nth-child(3) {
+          border-right: 0 !important;
+        }
+        &:nth-child(4) {
+          border-left: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .info-row {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .second {
+    width: 90% !important;
+  }
+}
+@media screen and (max-width: 950px) {
+  .fourth-row {
+    width: 100% !important;
+    .fourth-col {
+      margin: 0rem 2rem !important;
+    }
+  }
+  .twelve-row {
+    padding: 10rem 0 !important;
+  }
+  .first {
+    .firsPara {
+      width: 96% !important;
+      font-size: 14px !important;
+    }
+  }
+  .fourth {
+    .nightLight {
+      font-size: 0.9rem !important;
+    }
+    .background2 {
+      padding-left: 1rem !important;
+      h1 {
+        width: 100%;
+      }
+    }
+    .galaxyDisplayStart {
+      padding: 5px !important;
+    }
+  }
+  .about-first {
+    flex-direction: column-reverse;
+    .about-para {
+      .big-para {
+        padding-left: 0 !important;
+        flex-basis: 100% !important;
+      }
+    }
+    .about-select {
+      flex-basis: 100% !important;
+      justify-content: center !important;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  footer {
+    .footer-2 {
+      flex-direction: column !important;
+      line-height: 44px !important;
+    }
+  }
+  .fourth-row {
+    padding: 46px 0 !important;
+    grid-template-columns: repeat(1, 1fr) !important;
+    .fourth-col {
+      h2 {
+        font-size: 1.5rem !important;
+      }
+    }
+  }
+  .second {
+    grid-template-columns: repeat(1, 1fr) !important;
+    width: 95% !important;
+  }
+  .sixteen-row {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .fourth {
+    .image-row {
+      grid-template-columns: repeat(3, 1fr) !important;
+    }
+  }
+}
+
+#secondMenuIcon {
+  font-size: 2rem;
+  color: white;
+  margin-right: 1rem;
+  display: none;
+}
+
+@media screen and (max-width: 730px) {
+  #secondMenuIcon {
+    display: block;
+  }
+  .secondHeader {
+    .secondRightNav {
+      position: absolute;
+      flex-direction: column;
+      background: white;
+      color: beige;
+      width: 100%;
+      top: 100%;
+      right: 0;
+      transition: all 0.5s;
+      height: 0;
+      overflow: hidden;
+      line-height: 60px;
+      .secondRightNavItems {
+        flex-direction: column;
+        li {
+          a {
+            color: black !important;
+          }
+        }
+      }
+      button {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+        margin-bottom: 2rem !important;
+      }
+    }
+  }
+  .fourth {
+    .drop {
+      height: 50vh !important;
+      .drop2 {
+        width: 70% !important;
+      }
+      .drop3 {
+        width: 70% !important;
+      }
+    }
+  }
+  .third {
+    width: 100%;
+    .galaxy1 {
+      width: 60vw !important;
+    }
+    .galaxy2 {
+      width: 30vw !important;
+    }
+    .galaxy3 {
+      width: 30vw !important;
+    }
+  }
+  .about {
+    .gridnavigation {
+      grid-template-columns: repeat(2, 1fr) !important;
+      grid-row-gap: 1rem;
+      .gridnavcol {
+        &:nth-child(2) {
+          border-right: 0 !important;
+        }
+        &:nth-child(3) {
+          border-left: 0 !important;
+          border-right: 1px solid #ccc !important;
+        }
+        &:nth-child(4) {
+          border-right: 0 !important;
+          border-left: 1px solid #ccc;
+        }
+        &:nth-child(5) {
+          border-left: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .info-row {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .footer-2 {
+    .left-footer {
+      flex-direction: column !important;
+      ul {
+        width: 100%;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+      }
+    }
+    .right-footer {
+      flex-direction: column !important;
+    }
+  }
+  .footer-1 {
+    p {
+      padding-left: 0.5rem !important;
+    }
+  }
+}
+
+.showSecondHeader {
+  height: 60vh !important;
+}
+
+@media screen and (max-width: 530px) {
+  .fourth {
+    h1 {
+      font-size: 2rem !important;
+    }
+    .image-row {
+      grid-template-columns: repeat(2, 1fr) !important;
+    }
+    .frontCameraImg {
+      width: 95%;
+    }
+    .galaxyFold {
+      .leftGalaxyFold {
+        padding-left: 1rem !important;
+        flex-basis: 100%;
+      }
+    }
+    .fiveimage {
+      height: 60vh !important;
+    }
+  }
+  .about {
+    .gridnavigation {
+      grid-template-columns: repeat(1, 1fr) !important;
+      grid-row-gap: 1rem;
+      .gridnavcol {
+        padding: 11px 0px !important;
+        &:nth-child(1) {
+          border-right: 0 !important;
+        }
+        &:nth-child(2) {
+          border-left: 0 !important;
+        }
+        &:nth-child(3) {
+          border-left: 0 !important;
+          border-right: 0 !important;
+        }
+        &:nth-child(4) {
+          border-right: 0 !important;
+          border-left: 0 !important;
+        }
+        &:nth-child(5) {
+          border-left: 0 !important;
+        }
+      }
+    }
+  }
+  .rowNav {
+    width: 100% !important;
+  }
+}
+
+.showSecondHeader {
+  height: 60vh !important;
+}
+
+@media screen and (max-width: 430px) {
+  .fourth {
+    .galaxyFold {
+      height: 60vh !important;
+      .leftGalaxyFold {
+        padding-top: 5rem !important;
+      }
+    }
+    .background2 {
+      height: 60vh !important;
+    }
+    .info-row {
+      padding: 2rem 0 !important;
+    }
+  }
+}

@@ -1,0 +1,1538 @@
+.first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: centerm;
+      -ms-flex-pack: centerm;
+          justify-content: centerm;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10rem;
+}
+
+.first h1 {
+  font-size: 2.5rem;
+  margin: 5px 0;
+}
+
+.first .firstImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.first .firstImg img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.first .firsPara {
+  font-size: 23px;
+  text-align: center;
+  width: 77%;
+  line-height: 51px;
+  margin: 30px;
+}
+
+.second {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  padding: 3rem;
+  margin: auto;
+  width: 80%;
+}
+
+.second .second-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.second .second-col h2 {
+  margin-top: 1rem;
+  font-size: 2.4rem;
+  font-weight: normal;
+  line-height: 52px;
+}
+
+.second .second-col:last-child p {
+  font-size: 1.1rem;
+  line-height: 32px;
+  margin-bottom: 1rem;
+}
+
+.second .second-col:last-child .circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.second .second-col:last-child .circle div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 10px;
+}
+
+.second .second-col:last-child .circle div span {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-left: 6px;
+}
+
+.second .second-col:last-child .circle div .circle-para {
+  width: 20px;
+  height: 20px;
+  border: 2px solid black;
+  background-color: red;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.second .second-col:last-child .circle div:nth-child(1) .circle-para {
+  background-color: navy;
+}
+
+.second .second-col:last-child .circle div:nth-child(2) .circle-para {
+  background-color: yellow;
+}
+
+.third {
+  display: -ms-grid;
+  display: grid;
+  margin: auto;
+  width: 90%;
+  text-align: center;
+      grid-template-areas: "b a" "b c";
+}
+
+.third .third-col .galaxy1 {
+  grid-area: "a";
+  width: 50vw;
+}
+
+.third .third-col .galaxy2 {
+  grid-area: "b";
+  width: 25vw;
+}
+
+.third .third-col .galaxy3 {
+  grid-area: "c";
+  width: 25vw;
+}
+
+.fourth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fourth a {
+  border: 1px solid black;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 4rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem 2rem;
+  color: balck;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
+}
+
+.fourth a span {
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-left: 1px solid black;
+  padding-left: 2rem;
+  margin-left: 2rem;
+}
+
+.fourth a:hover {
+  background-color: black;
+  color: white;
+}
+
+.fourth a:hover span {
+  border-left: 1px solid white;
+}
+
+.fourth .fourth-row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  padding: 3rem;
+  margin: auto;
+  width: 80%;
+}
+
+.fourth .fourth-row .fourth-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 4rem 2rem;
+}
+
+.fourth .fourth-row .fourth-col h2 {
+  margin-top: 1rem;
+  font-size: 2.4rem;
+  font-weight: normal;
+  line-height: 52px;
+}
+
+.fourth .fourth-row .fourth-col p:last-child {
+  font-size: 1.1rem;
+  line-height: 32px;
+  margin-bottom: 1rem;
+}
+
+.fourth h1 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+.fourth .infinityImg {
+  margin: 6rem 0;
+}
+
+.fourth .gradeCamera {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.fourth .gradeCamera img {
+  width: 100%;
+}
+
+.fourth .rulerImg {
+  position: relative;
+}
+
+.fourth .rulerImg img {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  width: 100%;
+}
+
+.fourth .rulerImg #ruler {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.fourth .rulerImg div {
+  text-align: center;
+  margin: 2rem;
+}
+
+.fourth .rulerImg div p {
+  margin-bottom: 1rem;
+}
+
+.fourth .rulerImg div .zoomInfo {
+  margin: 0.5rem !important;
+}
+
+.fourth .rulerImg div .zoomInfo .smallText {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.fourth #backgroungTransition {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url(../../images/background.webp);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../../images/background.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fourth #backgroungTransition h1 {
+  font-size: 5rem;
+  color: white;
+}
+
+.fourth .nightNodeImg {
+  border-radius: 30px;
+  width: 80%;
+}
+
+.fourth .nightLight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+  width: 100%;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.fourth .singleTake {
+  width: 100%;
+}
+
+.fourth .frontCameraImg {
+  width: 80%;
+}
+
+.fourth .fiveimage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 5rem 0 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fourth .fiveimage #five1,
+.fourth .fiveimage #five3 {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  position: absolute;
+  overflow: hidden;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-animation: image1 4s linear infinite;
+          animation: image1 4s linear infinite;
+}
+
+.fourth .fiveimage #five1 img,
+.fourth .fiveimage #five3 img {
+  width: 60%;
+}
+
+.fourth .fiveimage #five2 {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation: image2 4s linear 4s infinite;
+          animation: image2 4s linear 4s infinite;
+  background-color: black;
+}
+
+.fourth .fiveimage #five2 img {
+  width: 60%;
+}
+
+.fourth .fiveimage #five3 {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: black;
+  position: absolute;
+  overflow: hidden;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-animation: image1 4s linear infinite;
+          animation: image1 4s linear infinite;
+}
+
+.fourth .fiveimage #five3 img {
+  width: 90%;
+}
+
+.fourth .fiveimage #five4 {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: -100;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation: image2 4s linear 4s infinite;
+          animation: image2 4s linear 4s infinite;
+  background-color: black;
+}
+
+.fourth .fiveimage #five4 img {
+  width: 90%;
+}
+
+.fourth .empty {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.fourth .galaxyStart {
+  background: black;
+  width: 100%;
+  padding: 3rem;
+}
+
+.fourth .galaxyDisplayStart {
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 6rem;
+}
+
+.fourth .galaxyDisplayStart img {
+  border-radius: 30px;
+  width: 100%;
+}
+
+.fourth .twelve-row {
+  background: black;
+  color: white;
+  width: 100%;
+  padding: 10rem 1rem;
+}
+
+.fourth .drop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  background-image: url(../../images/galaxy-s20_fe_ip68-drop1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fourth .drop .drop1 img {
+  width: 100%;
+}
+
+.fourth .drop .drop2 {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 45%;
+  bottom: 0;
+  z-index: 46;
+}
+
+.fourth .drop .drop2 img {
+  width: 100%;
+}
+
+.fourth .drop .drop3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  z-index: 601;
+  width: 67%;
+}
+
+.fourth .drop .drop3 img {
+  width: 100%;
+}
+
+.fourth .sixteen-row {
+  position: relative;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.999)), to(rgba(0, 0, 0, 0.1))), url(../../images/galaxy-s20_fe_echo-system.webp);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.999), rgba(0, 0, 0, 0.1)), url(../../images/galaxy-s20_fe_echo-system.webp);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  padding: 3rem;
+  margin: auto;
+  color: black;
+  width: 100%;
+  margin: 6rem 0;
+}
+
+.fourth .sixteen-row .sixteen-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  color: white;
+  margin: 5rem 0;
+}
+
+.fourth .sixteen-row .sixteen-col h2 {
+  margin-top: 1rem;
+  font-size: 2.4rem;
+  font-weight: normal;
+  line-height: 52px;
+  margin: 1rem 0;
+}
+
+.fourth .sixteen-row .sixteen-col p:last-child {
+  font-size: 1.1rem;
+  line-height: 32px;
+  margin-bottom: 1rem;
+}
+
+.fourth .sixteen-row .sixteen-col a {
+  margin: 2rem 0;
+  color: white;
+  border: 1px solid white;
+}
+
+.fourth .sixteen-row .sixteen-col a:hover {
+  background-color: white;
+  color: black;
+}
+
+.fourth .sixteen-row .sixteen-col2 {
+  position: absolute;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  right: 0;
+  z-index: -10;
+}
+
+.fourth .sixteen-row .sixteen-col2 img {
+  width: 80%;
+}
+
+.fourth .info-row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  padding: 2rem;
+  width: 85%;
+  margin: auto;
+}
+
+.fourth .info-row .info-col {
+  line-height: 37px;
+}
+
+.fourth .info-row .info-col h2 {
+  font-size: 16px;
+}
+
+.fourth .info-row .info-col a {
+  border: none;
+  text-decoration: underline;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.fourth .info-row .info-col a:hover {
+  background-color: transparent;
+  color: black;
+  border: none;
+  outline: none;
+}
+
+.fourth .image-row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  grid-gap: 2rem;
+  width: 80%;
+}
+
+.fourth .image-row .image-col {
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+.fourth .image-row .image-col img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.fourth .image-row .image-col img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.fourth .galaxyFold {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.999)), to(rgba(0, 0, 0, 0.1))), url(../../images/galaxy-z-fold2-mkt-pc.webp);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.999), rgba(0, 0, 0, 0.1)), url(../../images/galaxy-z-fold2-mkt-pc.webp);
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  background-color: #f4f4f4;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 4rem 0;
+}
+
+.fourth .galaxyFold .leftGalaxyFold {
+  padding-left: 4rem;
+  color: white;
+  padding-top: 10rem;
+}
+
+.fourth .galaxyFold .leftGalaxyFold h1 {
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+.fourth .galaxyFold .leftGalaxyFold a {
+  width: 60%;
+  margin: 3rem 0;
+  color: white;
+  border: 1px solid white;
+}
+
+.fourth .galaxyFold .leftGalaxyFold a:hover {
+  background-color: white;
+  color: black;
+}
+
+.fourth .galaxyFold .rightGalaxyFold img {
+  width: 100%;
+}
+
+.fourth .background {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url(../../images/galaxy-s20_fe_banner_why-galaxy.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  border-radius: 30px;
+  height: 100vh;
+  margin: 4rem 0;
+  padding-top: 7rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+  text-align: center;
+}
+
+.fourth .background img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -10;
+  border-radius: 56px;
+}
+
+.fourth .background a {
+  border: 1px solid white;
+  color: white;
+  margin: 2rem;
+}
+
+.fourth .background a:hover {
+  background-color: white;
+  color: black;
+}
+
+.fourth .background h2 {
+  margin-bottom: 1rem;
+}
+
+.fourth .background h1 {
+  font-size: 4rem;
+  font-weight: normal;
+  letter-spacing: 5px;
+}
+
+.fourth .background p {
+  font-size: 1.2rem;
+  line-height: 46px;
+}
+
+.fourth .background2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url(../../images/galaxy-s20_fe_banner_design-story.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 5rem;
+  background-repeat: no-repeat;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  border-radius: 30px;
+  color: white;
+  margin: 4rem 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+  text-align: start;
+}
+
+.fourth .background2 h1 {
+  width: 50%;
+}
+
+.fourth .background2 a {
+  margin: 1rem 0;
+  color: white;
+  border: 1px solid white;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.fourth .background2 a:hover {
+  background-color: white;
+  color: black;
+}
+
+.fourth hr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 1px;
+  background: #ccc;
+  margin: -30px 0 2rem;
+}
+
+.about-first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+  margin: auto;
+}
+
+.about-first .about-para {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+}
+
+.about-first .about-para .big-para {
+  line-height: 26px;
+  color: #433131bf;
+  font-size: 12px;
+  padding-left: 50px;
+}
+
+.about-first .about-select {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: relative;
+}
+
+.about-first .about-select .c-yellow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 2rem;
+  height: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid yellow;
+  background: black;
+  color: white;
+  margin: 0 5px;
+}
+
+.about-first .about-select .c {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 2rem;
+  height: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid #ccc;
+  background: white;
+  margin: 0 5px;
+}
+
+.about-first .about-select #dropdown {
+  width: 17rem;
+  border: 1px solid black;
+  height: 32px;
+  position: relative;
+  margin-left: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.about-first .about-select #dropdown .dropdown-content {
+  border-top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  background-color: white;
+  left: 0;
+  height: 0;
+  overflow: hidden;
+  line-height: 50px;
+}
+
+.about-first .about-select #dropdown .dropdown-content a {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+ol {
+  width: 82%;
+  margin: 1rem auto;
+  line-height: 27px;
+}
+
+ol li {
+  color: #433131bf;
+  font-size: 12px;
+}
+
+.rowNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  width: 90%;
+  margin: auto;
+  padding: 1rem 0;
+}
+
+.rowNav li {
+  list-style: none;
+  padding: 0 5px;
+}
+
+.rowNav li a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+.rowNav li a:hover {
+  text-decoration: underline;
+}
+
+.rowNav li span {
+  margin-left: 5px;
+  color: #ccc;
+}
+
+.rowNav .blur {
+  color: #ccc;
+}
+
+.gridnavigation {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  padding: 1rem;
+}
+
+.gridnavigation .gridnavcol {
+  border: 1px solid #ccc;
+  padding: 1.5rem;
+  line-height: 32px;
+}
+
+.gridnavigation .gridnavcol h2 {
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+
+.gridnavigation .gridnavcol ul li {
+  list-style: none;
+}
+
+.gridnavigation .gridnavcol ul li a {
+  color: rgba(0, 0, 0, 0.737);
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.gridnavigation .gridnavcol ul li a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+.footer-1 {
+  padding-bottom: 1rem;
+}
+
+.footer-1 p {
+  font-size: 12px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.8);
+  padding-left: 3rem;
+}
+
+.footer-1 p:nth-child(1) {
+  margin-bottom: 0.7rem;
+}
+
+.footer-1 p:nth-child(3) {
+  margin-bottom: 0.7rem;
+}
+
+.footer-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 1rem;
+  border-top: 1px solid #ccc;
+}
+
+.footer-2 .left-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-2 .left-footer h1 {
+  font-size: 14px;
+}
+
+.footer-2 .left-footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-2 .left-footer ul li {
+  list-style: none;
+  padding: 0 0.5rem;
+}
+
+.footer-2 .left-footer ul li a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+}
+
+.footer-2 .right-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-2 .right-footer img {
+  width: 20px;
+  margin: 0 0.5rem;
+}
+
+.show-dropdown-content {
+  height: -webkit-fit-content !important;
+  height: -moz-fit-content !important;
+  height: fit-content !important;
+  border: 1px solid black;
+}
+
+#heading {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  color: white;
+  font-size: 5rem;
+}
+
+.lightImage {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+@-webkit-keyframes image1 {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes image1 {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes image2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes image2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  .background h1 {
+    font-size: 3rem !important;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .about .gridnavigation {
+    -ms-grid-columns: (1fr)[3] !important;
+        grid-template-columns: repeat(3, 1fr) !important;
+    grid-row-gap: 1rem;
+  }
+  .about .gridnavigation .gridnavcol:nth-child(3) {
+    border-right: 0 !important;
+  }
+  .about .gridnavigation .gridnavcol:nth-child(4) {
+    border-left: 0 !important;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .info-row {
+    -ms-grid-columns: (1fr)[2] !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .second {
+    width: 90% !important;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .fourth-row {
+    width: 100% !important;
+  }
+  .fourth-row .fourth-col {
+    margin: 0rem 2rem !important;
+  }
+  .twelve-row {
+    padding: 10rem 0 !important;
+  }
+  .first .firsPara {
+    width: 96% !important;
+    font-size: 14px !important;
+  }
+  .fourth .nightLight {
+    font-size: 0.9rem !important;
+  }
+  .fourth .background2 {
+    padding-left: 1rem !important;
+  }
+  .fourth .background2 h1 {
+    width: 100%;
+  }
+  .fourth .galaxyDisplayStart {
+    padding: 5px !important;
+  }
+  .about-first {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .about-first .about-para .big-para {
+    padding-left: 0 !important;
+    -ms-flex-preferred-size: 100% !important;
+        flex-basis: 100% !important;
+  }
+  .about-first .about-select {
+    -ms-flex-preferred-size: 100% !important;
+        flex-basis: 100% !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  footer .footer-2 {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    line-height: 44px !important;
+  }
+  .fourth-row {
+    padding: 46px 0 !important;
+    -ms-grid-columns: (1fr)[1] !important;
+        grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .fourth-row .fourth-col h2 {
+    font-size: 1.5rem !important;
+  }
+  .second {
+    -ms-grid-columns: (1fr)[1] !important;
+        grid-template-columns: repeat(1, 1fr) !important;
+    width: 95% !important;
+  }
+  .sixteen-row {
+    -ms-grid-columns: (1fr)[1] !important;
+        grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .fourth .image-row {
+    -ms-grid-columns: (1fr)[3] !important;
+        grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+
+#secondMenuIcon {
+  font-size: 2rem;
+  color: white;
+  margin-right: 1rem;
+  display: none;
+}
+
+@media screen and (max-width: 730px) {
+  #secondMenuIcon {
+    display: block;
+  }
+  .secondHeader .secondRightNav {
+    position: absolute;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: white;
+    color: beige;
+    width: 100%;
+    top: 100%;
+    right: 0;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    height: 0;
+    overflow: hidden;
+    line-height: 60px;
+  }
+  .secondHeader .secondRightNav .secondRightNavItems {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .secondHeader .secondRightNav .secondRightNavItems li a {
+    color: black !important;
+  }
+  .secondHeader .secondRightNav button {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    margin-bottom: 2rem !important;
+  }
+  .fourth .drop {
+    height: 50vh !important;
+  }
+  .fourth .drop .drop2 {
+    width: 70% !important;
+  }
+  .fourth .drop .drop3 {
+    width: 70% !important;
+  }
+  .third {
+    width: 100%;
+  }
+  .third .galaxy1 {
+    width: 60vw !important;
+  }
+  .third .galaxy2 {
+    width: 30vw !important;
+  }
+  .third .galaxy3 {
+    width: 30vw !important;
+  }
+  .about .gridnavigation {
+    -ms-grid-columns: (1fr)[2] !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+    grid-row-gap: 1rem;
+  }
+  .about .gridnavigation .gridnavcol:nth-child(2) {
+    border-right: 0 !important;
+  }
+  .about .gridnavigation .gridnavcol:nth-child(3) {
+    border-left: 0 !important;
+    border-right: 1px solid #ccc !important;
+  }
+  .about .gridnavigation .gridnavcol:nth-child(4) {
+    border-right: 0 !important;
+    border-left: 1px solid #ccc;
+  }
+  .about .gridnavigation .gridnavcol:nth-child(5) {
+    border-left: 0 !important;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .info-row {
+    -ms-grid-columns: (1fr)[1] !important;
+        grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .footer-2 .left-footer {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .footer-2 .left-footer ul {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer-2 .right-footer {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .footer-1 p {
+    padding-left: 0.5rem !important;
+  }
+}
+
+.showSecondHeader {
+  height: 60vh !important;
+}
+
+@media screen and (max-width: 530px) {
+  .fourth h1 {
+    font-size: 2rem !important;
+  }
+  .fourth .image-row {
+    -ms-grid-columns: (1fr)[2] !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .fourth .frontCameraImg {
+    width: 95%;
+  }
+  .fourth .galaxyFold .leftGalaxyFold {
+    padding-left: 1rem !important;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .fourth .fiveimage {
+    height: 60vh !important;
+  }
+  .about .gridnavigation {
+    -ms-grid-columns: (1fr)[1] !important;
+        grid-template-columns: repeat(1, 1fr) !important;
+    grid-row-gap: 1rem;
+  }
+  .about .gridnavigation .gridnavcol {
+    padding: 11px 0px !important;
+  }
+  .about .gridnavigation .gridnavcol:nth-child(1) {
+    border-right: 0 !important;
+  }
+  .about .gridnavigation .gridnavcol:nth-child(2) {
+    border-left: 0 !important;
+  }
+  .about .gridnavigation .gridnavcol:nth-child(3) {
+    border-left: 0 !important;
+    border-right: 0 !important;
+  }
+  .about .gridnavigation .gridnavcol:nth-child(4) {
+    border-right: 0 !important;
+    border-left: 0 !important;
+  }
+  .about .gridnavigation .gridnavcol:nth-child(5) {
+    border-left: 0 !important;
+  }
+  .rowNav {
+    width: 100% !important;
+  }
+}
+
+.showSecondHeader {
+  height: 60vh !important;
+}
+
+@media screen and (max-width: 430px) {
+  .fourth .galaxyFold {
+    height: 60vh !important;
+  }
+  .fourth .galaxyFold .leftGalaxyFold {
+    padding-top: 5rem !important;
+  }
+  .fourth .background2 {
+    height: 60vh !important;
+  }
+  .fourth .info-row {
+    padding: 2rem 0 !important;
+  }
+}
+/*# sourceMappingURL=First.css.map */

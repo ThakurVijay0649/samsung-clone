@@ -1,0 +1,299 @@
+@import url("http://fonts.cdnfonts.com/css/samsung-sharp-sans");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "SamsungSharpSans", sans-serif;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5rem 2rem;
+}
+
+header .logo {
+  width: 100px;
+  margin-left: 23px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .logo img {
+  width: 100%;
+}
+
+header .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+}
+
+header .left .leftNavItems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 3rem;
+}
+
+header .left .leftNavItems li {
+  list-style: none;
+}
+
+header .left .leftNavItems li a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  padding: 6px 10px;
+  border-radius: 15px;
+  font-weight: 500;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+header .left .leftNavItems li a:hover {
+  background-color: black;
+  color: white;
+}
+
+header .rightNavItems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .rightNavItems li {
+  list-style: none;
+}
+
+header .rightNavItems li a {
+  padding: 6px 10px;
+  border-radius: 15px;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+header .rightNavItems li a:hover {
+  background-color: black;
+  color: white;
+}
+
+header .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .icons a img {
+  width: 25px;
+  height: 25px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0 7px;
+}
+
+.secondHeader {
+  background-color: #202425;
+  padding: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.secondHeader .secondLeftNav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 32px;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.secondHeader .secondRightNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.secondHeader .secondRightNav .secondRightNavItems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.secondHeader .secondRightNav .secondRightNavItems li {
+  list-style: none;
+  padding: 0 8px;
+}
+
+.secondHeader .secondRightNav .secondRightNavItems li a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  font-weight: bolder;
+}
+
+.secondHeader .secondRightNav button {
+  padding: 17px 47px;
+  font-size: 14px;
+  font-weight: 500;
+  background: #006bea;
+  color: white;
+  border: 1px solid #006bea;
+  margin-right: 50px;
+  margin-left: 17px;
+  cursor: pointer;
+}
+
+#menuIcon {
+  font-size: 2rem;
+  margin-right: 1rem;
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 1170px) {
+  #menuIcon {
+    display: block;
+  }
+  header {
+    padding: 1.5rem 0 !important;
+  }
+  header .left {
+    position: absolute;
+    top: 10%;
+    line-height: 53px;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    z-index: 9999;
+    background: white;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 0;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    overflow: hidden;
+    right: 0;
+    width: 100%;
+  }
+  header .left .leftNavItems {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 100%;
+    margin-left: 7px;
+  }
+  header .left .rightNavItems {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 100%;
+    margin-left: 7px;
+  }
+}
+
+.showHeader {
+  height: 100vh !important;
+}
+/*# sourceMappingURL=header.css.map */
